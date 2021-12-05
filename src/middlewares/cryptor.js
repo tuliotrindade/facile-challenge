@@ -1,11 +1,11 @@
 const jwt = require('jsonwebtoken');
 
-const SECRET = 'jirayaOninjaComMaisMissoes'
+const SECRET = 'jirayaOninjaComMaisMissoes';
 
-const nameCryptor = async (req, _res, next) => {
+const nameCryptor = (req, _res, next) => {
 	const { name } = req.body;
-	const encriptedName = jwt.sign(name, SECRET)
-	req.encriptedName = encriptedName
+	const encriptedName = jwt.sign(name, SECRET);
+	req.encriptedName = encriptedName;
 	next();
 }
 

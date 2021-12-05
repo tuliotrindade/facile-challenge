@@ -1,17 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
-const cryptor = require('./middlewares/cryptor')
-const cryptorController = require('./controllers/cryptorController')
-const validateName = require('./middlewares/validateName')
+const cryptoRouter = require('./routes/cryptoRoutes');
 
 const app = express();
 app.use(bodyParser.json());
+
 const PORT = 3333;
 
-app.get('/encripts/:id', cryptorController.findById)
-
-app.post('/encripts', validateName, cryptor, cryptorController.newEncriptedName);
+app.use('/encripts', cryptoRouter);
 
 app.listen(PORT, () => {
   console.log(`Aplicação ouvindo na porta ${ PORT }`);

@@ -1,7 +1,7 @@
 const encryptedName = require('../models/encryptedName');
 
 const newEncriptedName = async (name) => {
-  const output = await encryptedName.create({ encrypted_name: name })
+  const output = await encryptedName.create({ encrypted_name: name });
   return output;
 };
 
