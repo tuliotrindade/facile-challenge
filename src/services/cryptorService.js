@@ -10,7 +10,13 @@ const findById = async (id) => {
   return output;
 }
 
+const findAll = async (id) => {
+  const output = await encryptedName.findAll();
+  return output;
+}
+
 module.exports = {
   newEncriptedName,
   findById,
+  findAll,
 };

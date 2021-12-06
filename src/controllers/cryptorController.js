@@ -17,7 +17,16 @@ const findById = rescue(async (req, res) => {
   return res.status(200).json(output);
 });
 
+const findAll = rescue(async (req, res) => {
+  const output = await cryptorService.findAll();
+  if (!output) {
+    return res.status(404).json({ message: 'no name has been registered yet' });
+  }
+  return res.status(200).json(output);
+});
+
 module.exports = {
   newEncriptedName,
   findById,
+  findAll,
 };
