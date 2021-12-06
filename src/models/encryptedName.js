@@ -22,4 +22,10 @@ const encryptedName = dataBase.define(
   }
 );
 
+const init = async () => {
+  await encryptedName.sync();
+};
+
+init();
+
 module.exports = encryptedName;
