@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3333;
 
 app.use('/encripts', cryptoRouter);
 
-app.listen(PORT, () => {
+app.listen(PORT , () => {
   console.log(`Aplicação ouvindo na porta ${ PORT }`);
 });
 
