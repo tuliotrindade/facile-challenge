@@ -12,7 +12,7 @@ const findById = rescue(async (req, res) => {
   const { id } = req.params;
   const output = await cryptorService.findById(id);
   if (!output) {
-    res.status(404).json({ message: 'id not found' });
+    return res.status(404).json({ message: 'id not found' });
   }
   return res.status(200).json(output);
 });
