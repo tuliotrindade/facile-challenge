@@ -10,7 +10,7 @@ const findById = async (id) => {
   return output;
 }
 
-const findAll = async (id) => {
+const findAll = async () => {
   const output = await encryptedName.findAll();
   return output;
 }

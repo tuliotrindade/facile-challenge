@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const SECRET = 'jirayaOninjaComMaisMissoes';
+const SECRET = process.env.SECRET;
 
 const nameCryptor = (req, _res, next) => {
 	const { name } = req.body;
