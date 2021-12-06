@@ -12,7 +12,7 @@ Desafio Técnico e Criativo para processo seletivo.
 
 ## Endpoints
 
-### POST - http://localhost:3333/encripts
+### POST - http://localhost:3333/encripts ou https://facile-challenge-1000.herokuapp.com/encripts
 
 Este endpoint recebe um parametro "name" no body da requisição, realiza a encriptação do nome recebido, cadastra no banco de dados um novo elemento composto pelo nome encriptado e um id unico, retorna para o usuário um objeto com o nome encriptado e o id.
 
@@ -22,7 +22,7 @@ Requisição exemplo:<br/>
 Retorno:<br/>
 <img src="/images/createResponse.png" alt="Create Response"/>
 
-### GET - http://localhost:3333/encripts/id
+### GET - http://localhost:3333/encripts/id ou https://facile-challenge-1000.herokuapp.com/encripts/id
 
 Este endpoint recebe um id como parametro da requisição, realizara a busca no bando de dados por um elemento com o id correspondente ao da requisição, caso encontre, retornará um objeto contendo o id e o nome encriptado.
 
