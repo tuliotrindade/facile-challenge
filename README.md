@@ -12,22 +12,22 @@ Desafio Técnico e Criativo para processo seletivo, este projeto consiste na imp
 
 ## Pré-Requisitos
 
-Este projeto Utiliza o banco de dados PostgreSQL, para o perfeito funcionamento é nescessário ter o banco de dados em sua maquina. Para instruções sobre a instalação do banco de dados acesse https://www.postgresql.org/download/.
+Este projeto Utiliza o banco de dados PostgreSQL, para o perfeito funcionamento é necessário ter o banco de dados em sua máquina. Para instruções sobre a instalação do banco de dados acesse https://www.postgresql.org/download/.
 
 ## Instalação
 
 -Clone o repositório através da seguinte chave https: `https://github.com/tuliotrindade/facile-challenge.git`
 
--Instale as dependencias atravez do `npm install`.
+-Instale as dependências através do `npm install`.
 
--Para inciar a aplicação rode o comando `npm start` em seu terminal.
+-Para iniciar a aplicação rode o comando `npm start` em seu terminal.
 
 
 ## Endpoints
 
 ### POST:<br/> http://localhost:3333/encripts ou https://facile-challenge-1000.herokuapp.com/encripts
 
-Este endpoint recebe um parametro "name" no body da requisição, realiza a encriptação do nome recebido, cadastra no banco de dados um novo elemento composto pelo nome encriptado e um id unico, retorna para o usuário um objeto com o nome encriptado e o id.
+Este endpoint recebe um parâmetro "name" no body da requisição, realiza a encriptação do nome recebido, cadastra no banco de dados um novo elemento composto pelo nome encriptado e um id unico, retorna para o usuário um objeto com o nome encriptado e o id.
 
 Requisição exemplo:<br/>
 <img src="/images/createRequisition.png" alt="Create Requisition"/>
@@ -37,7 +37,7 @@ Retorno:<br/>
 
 ### GET:<br/> http://localhost:3333/encripts/id ou https://facile-challenge-1000.herokuapp.com/encripts/id
 
-Este endpoint recebe um id como parametro da requisição, realizara a busca no bando de dados por um elemento com o id correspondente ao da requisição, caso encontre, retornará um objeto contendo o id e o nome encriptado.
+Este endpoint recebe um id como parâmetro da requisição, realizara a busca no bando de dados por um elemento com o id correspondente ao da requisição, caso encontre, retornará um objeto contendo o id e o nome encriptado.
 
 Requisição exemplo:<br/>
 <img src="/images/findRequest.png" alt="find Requisition"/>
@@ -50,7 +50,7 @@ Retorno em caso de não haver um id correspondente ao da requisição:<br/>
 
 ### GET:<br/> http://localhost:3333/encripts/all ou https://facile-challenge-1000.herokuapp.com/encripts/all
 
-Este endpoint não recebe parametros, realiza uma busca no banco de dados buscando todos elementos da tabela, caso encontre retorna um array de objetos com todos elementos cadastrados.
+Este endpoint não recebe parâmetros, realiza uma busca no banco de dados buscando todos elementos da tabela, caso encontre retorna um array de objetos com todos elementos cadastrados.
 
 Requisição exemplo:<br/>
 <img src="/images/findAllRequest.png" alt="find Requisition"/>
